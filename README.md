@@ -1,4 +1,11 @@
 # Stock Prediction App
+- using `react` for frontend of `vite+react` for faster project creation
+- using `django` for backend
+- using `django:rest_framework` for handling api endpoints.
+- using `react font awesome` for spinning view.
+- using `djang_rest_framework:jwt` for the login functionality. 
+
+
 ## Backend Django
 ### django rest framework
 ### python decouple
@@ -9,6 +16,10 @@
 - django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)
 - [Hear is the link for this](https://pypi.org/project/django-cors-headers/)
 - futher we need to make some changes in the installed application and middleware of `django:proejct:settings.py`
+
+### djangoRestFrameworkSimpleJWT
+- A minimal JSON Web Token authentication plugin for Django REST Framework
+- [here is the link for this](https://pypi.org/project/djangorestframework-simplejwt/)
 
 
 ## Frontent React

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts', # account application
     'api', # for api endpoints with django
     'corsheaders', # for CORS server headers
+    'rest_framework_simplejwt', # for login authentication
     
 ]
 
@@ -131,3 +132,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
