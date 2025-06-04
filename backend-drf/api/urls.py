@@ -10,4 +10,5 @@ urlpatterns = [
     # Simple dj_SimpleJWT
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  
+    path('protected-view', UserViews.ProtectedView.as_view(), name='protected_view')
 ]

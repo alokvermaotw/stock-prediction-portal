@@ -11,7 +11,7 @@ const Headers = () => {
     localStorage.removeItem('accessToken')
     localStorage.removeItem('refreshToken')
     setIsLoggedIn(false)
-    console.log('Logged out');
+    // console.log('Logged out');
     navigate('/login')
     
   }
@@ -23,7 +23,11 @@ const Headers = () => {
           
           <div>
             {isLoggedIn ? (
+              <>
+              <Button text='Dashboard' class="btn-info" url='/dashboard'/>
+              &nbsp;
               <button className='btn btn-danger' onClick={handleLogout}>Logout</button>
+              </>
             ) : (
               <>
                 <Button text='Login' class="btn-outline-info" url='/login'/>

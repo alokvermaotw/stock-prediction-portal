@@ -16,9 +16,9 @@ const Main = () => {
         <h1 className='text-light'>Stock prediction portal</h1>
         <p className='text-light lead'>This stock prediciton application utilizes mahcine learning techiniques, specifically employeing Keras, and LSTM model, integrated within the Django framework. It forecasts future stock prices by analyzing 100-day and 200-day moving averages, essential indicators widely used by stock analysts to inform trading and investment decisions.</p>
         {isLoggedIn ? (
-              <button className='btn btn-info'>Get more</button>
+              <Button class='btn btn-info' text='Explore now' url='/dashboard' />
             ) : (
-              <Button class='btn-info' text='Login' url='/login' />
+              <Button class='btn-info' text='Login' url='/dashboard' />
             )}
       </div>
     </div>

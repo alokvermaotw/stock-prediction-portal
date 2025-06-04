@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     const userData = {username, password}
-    console.log(userData);
+    // console.log(userData);
     try{
       const response = await axios.post('http://127.0.0.1:8000/api/v1/token/', userData)
       localStorage.setItem('accessToken', response.data.access)

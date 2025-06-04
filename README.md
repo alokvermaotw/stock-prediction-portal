@@ -10,7 +10,7 @@
 ### django rest framework
 ### python decouple
 - used for connecting django application with the env configs
-- [Here is the link](https://pypi.org/project/python-decouple/)
+- [Here is the link](https://pypi.org/projet/python-decouple/)
 
 ### django cors headers
 - django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)
